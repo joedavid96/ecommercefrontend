@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.HashSet;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class Codechef
+class ElevatorStops
 {
     public static int solution(int[] A, int[] B, int M, int X, int Y)
     {

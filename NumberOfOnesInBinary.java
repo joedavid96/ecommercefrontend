@@ -9,8 +9,15 @@ class NumberOfOnesInBinary
 {
     public static int solution(int a, int b)
     {
+	int number = 0;
         String [] arr = Integer.toBinaryString(a*b).split("0");
-        return Arrays.stream(arr).collect(Collectors.joining("")).length();
+        //return Arrays.stream(arr).collect(Collectors.joining("")).length();
+	for(String temp : arr)
+        {
+            number += temp.length();
+        }
+        return number;
+	    
         
     }
 	public static void main (String[] args) throws java.lang.Exception
